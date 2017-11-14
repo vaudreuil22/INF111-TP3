@@ -1,13 +1,13 @@
 /**
  * Classe pour les docteurs. 
  * 
- * Ls département peuvent être : 	Clinique.CHIRURGIE, 
+ * Ls dÃ©partement peuvent Ãªtre : 	 Clinique.CHIRURGIE, 
  * Clinique.UROLOGIE ou Clinique.URGENCE
  * 
- * Dans le cadre du cours inf111, travail pratique numéro 3
- * (voir énoncé INF111 A17 tp3 partie 1 fourni).
+ * Dans le cadre du cours inf111, travail pratique numÃ©ro 3
+ * (voir Ã©noncÃ© INF111 A17 tp3 partie 1 fourni).
  * 
- * @author Pierre Bélisle
+ * @author Pierre BÃ©lisle
  * @version Copyright A2017
  */
 package clinique;
@@ -22,13 +22,13 @@ public class Docteur extends Participant implements Serializable{
 
 
     /**
-     * Crée un docteur avec l'identification et le numéro de
-     * département fournis à l'appel.
+     * CrÃ©e un docteur avec l'identification et le numÃ©ro de
+     * dÃ©partement fournis Ã  l'appel.
      * 
      * @param identification
-     *        Doit être non null (aucune validation).
+     *        Doit Ãªtre non null (aucune validation).
      * @param numDepartement
-     *        Le numéro qui peut être Clinique.UROLOGIE...
+     *        Le numÃ©ro qui peut Ãªtre Clinique.UROLOGIE...
      * 
      */
     public Docteur(Identification unIdentification, int numDepartement) {
@@ -40,7 +40,7 @@ public class Docteur extends Participant implements Serializable{
 
 
     /**
-     * @return Le numéro de departement.
+     * @return Le numÃ©ro de departement.
      */
     public int getNumDepartement() {
         return numDepartement;
@@ -49,7 +49,7 @@ public class Docteur extends Participant implements Serializable{
 
     /**
      * @param numDepartement
-     *        Le numéro de departement à utiliser.
+     *        Le numÃ©ro de departement Ã  utiliser.
      */
     public void setNumDepartement(int numDepartement) {
         this.numDepartement = numDepartement;
@@ -83,7 +83,7 @@ public class Docteur extends Participant implements Serializable{
     @Override
     public String toString() {
 
-        // La partie identification laissée au parent.
-        return "Nom : " + this.getIdentification().getNom() + "    " + "Prénom : " + this.getIdentification().getPrenom() + "   " + "Departement   :   " + Clinique.getNumDepartement2String(numDepartement);
+        // La partie identification laissÃ©e au parent.
+        return "Nom : " + this.getIdentification().getNom() + "    " + "PrÃ©nom : " + this.getIdentification().getPrenom() + "   " + "Departement   :   " + Clinique.getNumDepartement2String(numDepartement);
     }
 }
