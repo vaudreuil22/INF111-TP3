@@ -7,9 +7,9 @@ import java.io.Serializable;
 
 
 /**
- * Cette classe mère permet de gérer l'identification d'un participant.
+ * Cette classe mÃ¨re permet de gÃ©rer l'identification d'un participant.
  * 
- * @author nicolas
+ * @author Nicolas Lafranchise, Simon Emery
  *
  */
 public class Participant implements Serializable {
@@ -29,7 +29,7 @@ public class Participant implements Serializable {
      * Constructeur par copie.
      * 
      * @param unIdentification
-     *            L'identifiant du participant à copier.
+     *            L'identifiant du participant Ã  copier.
      *
      * @return Copie d'un participant dans l'autre objet.
      */
@@ -43,7 +43,7 @@ public class Participant implements Serializable {
     // ===== Get ===== //
 
     /**
-     * La méthode retourne l'identifiant du participant.
+     * La mÃ©thode retourne l'identifiant du participant.
      * 
      * @return L'identifiant du participant.
      */
@@ -56,9 +56,9 @@ public class Participant implements Serializable {
     // ===== Set ===== //
 
     /**
-     * La méthode retourne l'identifiant du participant.
+     * La mÃ©thode retourne l'identifiant du participant.
      * 
-     * @return L'identifiant du participant.
+     * @return Aucun.
      */
     public void setIdentification(Identification unIdentification) {
 
@@ -66,32 +66,32 @@ public class Participant implements Serializable {
     }
 
 
-    // ===== Méthodes ===== //
+    // ===== MÃ©thodes ===== //
 
     /**
-     * La méthode retourne uen chaine de caractère avec l'identification du
-     * particiant qui indique son nom et son prénom.
+     * La mÃ©thode retourne uen chaine de caractÃ¨re avec l'identification du
+     * particiant qui indique son nom et son prÃ©nom.
      * 
-     * @return La chaine de caractère de l'identifiant du participant.
+     * @return La chaine de caractÃ¨re de l'identifiant du participant.
      */
     public String toString() {
 
-        return ("Nom :" + this.participant.getNom() + " " + "Prénom :" + this.participant.getPrenom());
+        return ("Nom :" + this.participant.getNom() + " " + "PrÃ©nom :" + this.participant.getPrenom());
     }
 
 
     /**
-     * La méthode compare 2 identifiants d'un participant et retourne si ils sont égaux.
+     * La mÃ©thode compare 2 identifiants d'un participant et retourne si ils sont Ã©gaux.
      * 
      * @param unIdentification
-     *            L'identifiant du participant à comparer.
+     *            L'identifiant du participant Ã  comparer.
      * 
      * @return La valeur de la comparaison (True/False)
      * 
      */
     public boolean equals(Identification unIdentification) {
 
-        // Hypothèse que la comparaison n'est pas vrai.
+        // HypothÃ¨se que la comparaison n'est pas vrai.
         boolean est_possible = false;
 
         if (this.participant == unIdentification) {
@@ -128,18 +128,19 @@ public class Participant implements Serializable {
         return est_possible;
 
     }
-    
+
+
     public String getCategorieParticipant() {
-        
+
         return "Participant";
     }
 
 
     /**
-     * La procédure copie l'objet participant dans le second objet.
+     * La procÃ©dure copie l'objet participant dans le second objet.
      * 
      * @param unIdentification
-     *            L'identification à copier dans le participant.
+     *            L'identification Ã  copier dans le participant.
      * 
      * @return Aucun
      */
@@ -151,3 +152,4 @@ public class Participant implements Serializable {
     }
 
 }
+
